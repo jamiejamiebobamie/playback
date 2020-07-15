@@ -1,0 +1,9 @@
+<div class="navbar">
+    {{#if user}}
+        <a class="commentLink" href="/">show comments</a>
+        <a class="logout" href="/logout">logout</a>
+    {{else}}
+        <a class="login" href="/login">login</a>
+        <a class="sign-up" href="/sign-up">sign-up</a>
+    {{/if}}
+</div>
