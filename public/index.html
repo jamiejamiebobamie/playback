@@ -31,10 +31,11 @@
     <script>
       $(function () {
         $( function() {
-            $( "#chatbox" ).draggable();
+            $( "#chatbox" ).draggable().resizable();
         } );
 
-        var socket = io();
+        var socket = io().connect();
+
         $('form').submit(function(e){
           e.preventDefault();
           socket.emit('chat message', $('#m').val());
@@ -49,6 +50,5 @@
       });
 
     </script>
-    <script src="popup.js"></script>
   </body>
 </html>
