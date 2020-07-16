@@ -34,7 +34,8 @@ const Comment = require('./models/comment.js');
 const comments = require('./controllers/comments.js')(app);
 const Session = require('./models/session.js');
 const sessions = require('./controllers/sessions.js')(app);
-app.use(express.static('Public'));
+// app.use(express.static('Public'));
+app.use(express.static(path.join(__dirname, "public")));
 //heroku database.
 mongoose.connect((process.env.MONGODB_URI || 'mongodb://localhost/db'), { useNewUrlParser: true });
 //views middleware
