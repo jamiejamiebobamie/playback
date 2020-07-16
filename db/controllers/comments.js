@@ -20,7 +20,6 @@ module.exports = function(app) {
                 return res.status(401); // UNAUTHORIZED
             }
         });
-
     // READ -- INDEX
     // just for proof of concept to show that it works.
     app.get('/', (req, res) => {
