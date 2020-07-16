@@ -1,0 +1,54 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.indexBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.comments{
+    margin:5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+form{
+    margin:5vw;
+}
+a{
+    border:1px solid black;
+    border-color: black;
+    border-width: thin;
+    border-radius: 5px;
+    font-size: 24px;
+    position: relative;
+    top: 11px;
+    padding:15px;
+}
+a:hover{
+    color: rgb(57,74,124);
+    background-color: rgb(233,85,74);
+    text-decoration: none;
+    border-color: black;
+}
+h4{
+    color: rgb(57,74,124);
+}
+.comment{
+    background-color: rgb(80,125,185);
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px
+}
+.commentBody{
+    margin-left: 10px
+}
